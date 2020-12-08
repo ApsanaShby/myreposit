@@ -17,9 +17,10 @@
     {
     $user= $row['user'];
     $pass= $row['pass'];
-     if($user == $user && $pass == $pass)
+     if($user == $user & $pass == $pass)
       {
-    header("Location:http://localhost/student/questions.html");
+        
+	 header("Location:http://localhost/student/questions.html");
 
       }   
   
@@ -28,7 +29,7 @@
      echo "not valid";
       }
     }   
-
+ 
   $sql="INSERT INTO login(user,pass) VALUES ('$user','$pass')";
  } 
 ?>
