@@ -1,0 +1,116 @@
+<html>
+<head>
+<style>
+div {
+    opacity: 0.8;
+}
+
+input
+{
+   padding: 10px 20px ;color:white;
+}
+td
+{
+padding: 10px 20px;
+color: white;
+}
+input[type=text],input[type=password],input[type=email]
+{
+background: transparent;
+border: none;
+border-bottom: 1px solid white;
+}
+input[type="submit"],input[type="reset"]
+{
+        border: none;
+	outline: none;
+	height: 40px;
+	
+	background: #fb2525;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 20px;
+}
+input[placeholder]
+{
+	font-size: 15px;
+}
+h1
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+
+}
+
+
+input[type="submit"]
+{width: 90%;}
+
+input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+
+}
+body
+{
+margin: 0;
+padding: 0;
+
+background-size: cover;
+background-position: center;
+font-family: sans-serif;
+}
+
+
+</style></head>
+<script type="text/javascript">
+function validate()
+{
+if(document.f1.pass.value!=document.f1.pass2.value)
+{
+alert("please check your password ");return false;
+
+}
+
+}
+</script>
+<body><body background="img.jpg">
+<br><br>
+<form action="register.php" method="post" name="f1" onsubmit="return(validate())" >
+
+<DIV><table cellpadding="2" cellspacing="14" width="20%" bgcolor="black" align="center" border="0">
+<DIV>
+<tr><td colspan="2"><b><center>REGISTERATION</center></b></td></tr>
+<tr><td>Name:</td>
+<td><input type="text" required name="name" size="30" placeholder="your name"></td>
+</tr>
+<tr><td>Gender:</td>
+<td><input type="radio" required name="gen" value="Male" >Male
+<input type="radio"  required name="gen" value="Female">Female</td>
+</tr>
+<tr><td>E-Mail:</td>
+<td><input type="email" required name="email" size="30" placeholder="e-mail"></td></tr>
+
+
+
+<tr>
+<td>Password:</td>
+<td>
+<input type="password"  required  name="pass" size="30" placeholder="password">
+</td></tr>
+
+<tr>
+<td>Re-enter Password:</td>
+<td><input type="password"  required  name="pass2" size="30" placeholder="password"></td></tr>
+
+
+<tr><td colspan="2"><center><br><br><input type="submit" value="Submit"></center></td></tr>
+</tr>
+</table>
+</form>
+</body>
+</html>

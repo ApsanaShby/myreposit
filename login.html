@@ -1,0 +1,34 @@
+<html>
+<head><title>
+login</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body><body background="img1.jpg">
+<div class="loginbox" ><div><table cellpadding="2" cellspacing="14" width="30%" bgcolor="black" align="center"
+cellspacing="2"></div>
+
+<h1>Login Details</h1>
+<script type="text/javascript">
+function validate()
+{
+if(document.f1.user.value=="")
+{
+alert("please enter your name");return false;
+}
+if(document.f1.pass.value=="")
+{
+alert("please enter the password");return false;
+}
+}</script>
+<br><br><br>
+<form action="login.php" method="post" name="f1" onsubmit="return(validate())">
+<p>User Name:</p><input type="text" name="user" id="user" size="30" placeholder="username">
+<BR></BR><p>Password:</p>
+<input type="Password" name="pass" id="pass" size="30" placeholder="password">
+<br></br><br></br>
+<input type="submit">
+
+<p>New User? <a href="register.html">Register</a></p>
+
+</form></div>
+</body></head>
+</html>
